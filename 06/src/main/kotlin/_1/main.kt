@@ -5,7 +5,8 @@ import getLinesFromInputWithBlank
 
 fun main() {
     val lines: MutableList<String> = getLinesFromInputWithBlank().toMutableList()
-    println(split(lines, listOf(), ""))
+    print(split(lines, listOf(), "").map { it.toCharArray().toSet() }.map { it.size }
+        .reduce(Int::plus))
 }
 
 
