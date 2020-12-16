@@ -37,7 +37,7 @@ out/
 /bin1/
 java/build/**
 
-.gradle
+.gradle/
 **/build/
 !src/**/build/
 
